@@ -20,15 +20,6 @@ Apim은 ZCP SSO와 연동하여 사용자를 추가하며 사용자 권한을 �
 ![user main](./img/user3.png)
 3. 추가할 사용자를 선택하고 가져오기 버튼을 누르면 대항 사용자에 대한 권한을 선택합니다. 
 ![user main](./img/user5.png)
-
-    | 권한  | 설명  |
-    |---|---|---|---|---|
-    | apim-admin | APIM 관리자 |
-    | apim-member | APIM 멤버 |
-    | devportal-admin | DEV. PORTAL 관리자 |
-    | devportal-api-admin | DEV. PORTAL API 관리자 |
-    | devportal-member | DEV. PORTAL 일반 사용자 권한 |
-
 4. 권한 선택 후 사용자 권한 설정 및 가져오기 버튼으로 사용자를 추가할 수 있습니다.
 ![user main](./img/user6.png)
 
