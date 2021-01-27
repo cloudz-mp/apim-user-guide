@@ -12,6 +12,8 @@
 
 아래 그림과 같이 두 가지 종류 중 하나를 선택하여 로그인 할 수 있습니다.
 
+<kbd><img src="./images/login01.png" /></kbd>
+
 ![login01.png](./images/login01.png)
 
 사용자 로그인 화면
