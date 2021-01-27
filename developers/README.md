@@ -3,10 +3,6 @@
 - [로그인 하기](#로그인-하기)
 - [Developers User 가이드](#developers-user-가이드)
     - [My Application 생성하기](#my-application-생성하기)
-        - [Application 기본 정보 화면](#application-기본-정보-화면)
-        - [Application API KEY 화면](#application-api-key-화면)
-        - [API 사용 요청하기](#api-사용-요청하기)
-        - [멤버 관리](#멤버-관리)
 - [Developers Admin 가이드](#developers-admin-가이드)
     - [Home 화면 관리하기](#home-화면-관리하기)
     - [Menu 관리하기](#menu-관리하기)
@@ -92,7 +88,7 @@ Home 화면의 Menu를 관리자가 직접 관리할 수 있습니다.
 메뉴 구조를 설정하고, 메뉴별 Contents를 작성할 수 있습니다.
 <kbd><img src="./images/menu02.png" /></kbd>
 
-위 화면에 편집 버튼을 누르면 아래와 같이 컨텐 작성 가능합니다.
+위 화면에 편집 버튼을 누르면 아래와 같이 컨텐츠 작성 가능합니다.
 <kbd><img src="./images/menu03.png" /></kbd>
 
 
