@@ -3,8 +3,15 @@
 - [로그인 하기](#로그인-하기)
 - [Developers User 가이드](#developers-user-가이드)
     - [My Application 생성하기](#my-application-생성하기)
-    - [소 목차2](#)
-- [Developers Admin 화면](#developers-admin-가이드)
+        - [Application 기본 정보 화면](#application-기본-정보-화면)
+        - [Application API KEY 화면](#application-api-key-화면)
+        - [API 사용 요청하기](#api-사용-요청하기)
+        - [멤버 관리](#멤버-관리)
+- [Developers Admin 가이드](#developers-admin-가이드)
+    - [Home 화면 관리하기](#home-화면-관리하기)
+    - [Menu 관리하기](#menu-관리하기)
+    - [Product 관리하기](#product-관리하기)
+    - [API 사용 요청 승인/반려](#api-사용-요청-승인/반려)
 
 
 ## 로그인 하기
@@ -15,9 +22,11 @@
 <kbd><img src="./images/login01.png" /></kbd>
 
 사용자 로그인 화면
+
 <kbd><img src="./images/login02.png" /></kbd>
 
 관리자 로그인 화면 - Cloud ZCP Console 계정으로 로그인 할 수 있습니다.
+
 <kbd><img src="./images/login03.png" /></kbd>
 
 
@@ -26,33 +35,41 @@
 ### My Application 생성하기
 
 Application -> My Applications -> 생성 버튼 클릭 -> Application 이름 작성
+
 <kbd><img src="./images/application01.png" /></kbd>
 
 
 1. Application 기본 정보 화면
 
 **Application 이름 수정, Application 아이콘 삽입, Application 삭제** 기능이 있습니다.
+
 <kbd><img src="./images/application02.png" /></kbd>
+<br>
 
 2. Application API KEY 화면
 
 **보안을 위한 API KEY가 보여지는 화면 입니다. API KEY가 외부로 잘못 노출되었을때 API KEY를 재발급 하여 보안을 유지할 수 있습니다.**
+
 <kbd><img src="./images/application03.png" /></kbd>
+<br>
 
 3. API 사용 요청하기
 
 **추가 버튼을 누르면 사용할 수 있는 API 항목이 나옵니다.**
+
 <kbd><img src="./images/application04.png" /></kbd>
 
-**관리자가 등록해 놓은 API 목록입니. 선택 후 확인 버튼을 누르면 관리자에게 승인 요청다이 보내집니다.**
+관리자가 등록해 놓은 API 목록입니다. 선택 후 확인 버튼을 누르면 관리자에게 승인 요청이 보내집니다.
+
 <kbd><img src="./images/application05.png" /></kbd>
 
 사용요청을 한 후 관리자가 승인할때까지 "대기" 상태로 나타납니다. 승인 후 "완료" 상태로 나타나며 이때부터 API URL이 보여지고 사용이 가능합니다. 
+<br>
 
 4. 멤버 관리
 
 **Application 에 멤버를 추가할 수 있습니다.**
-![Application06.png](./images/application06.png)
+<kbd><img src="./images/application06.png" /></kbd>
 
 
 
@@ -157,7 +174,7 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 > |Remove|Headers| [header name] <br> 해당 header를 제거합니다.| EX: header-name
 > |Remove|Json| [json key] <br> 해당 파라미터를 제거합니다. | EX: json-key
 
-### API 사용 요청 승인 or 반려하기
+### API 사용 요청 승인/반려
 Developers 사용자가 API 사용을 요청하면 관리자는 승인/반려가 가능합니다. 승인/반려 시 메시지 입력을 하여 사용자에게 승인/반려 메시지륿 보낼 수 있습니다.
 
 어떤 Product의 어떤 API를 사용 요청했는지 볼 수 있습니다.
