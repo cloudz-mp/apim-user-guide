@@ -14,13 +14,11 @@
 
 <kbd><img src="./images/login01.png" /></kbd>
 
-![login01.png](./images/login01.png)
-
 사용자 로그인 화면
-![login02.png](./images/login02.png)
+<kbd><img src="./images/login02.png" /></kbd>
 
 관리자 로그인 화면 - Cloud ZCP Console 계정으로 로그인 할 수 있습니다.
-![login03.png](./images/login03.png)
+<kbd><img src="./images/login03.png" /></kbd>
 
 
 ## Developers User 가이드
@@ -28,26 +26,26 @@
 ### My Application 생성하기
 
 Application -> My Applications -> 생성 버튼 클릭 -> Application 이름 작성
-![Application01.png](./images/application01.png)
+<kbd><img src="./images/application01.png" /></kbd>
 
 
 1. Application 기본 정보 화면
 
 **Application 이름 수정, Application 아이콘 삽입, Application 삭제** 기능이 있습니다.
-![Application02.png](./images/application02.png)
+<kbd><img src="./images/application02.png" /></kbd>
 
 2. Application API KEY 화면
 
 **보안을 위한 API KEY가 보여지는 화면 입니다. API KEY가 외부로 잘못 노출되었을때 API KEY를 재발급 하여 보안을 유지할 수 있습니다.**
-![Application03.png](./images/application03.png)
+<kbd><img src="./images/application03.png" /></kbd>
 
 3. API 사용 요청하기
 
 **추가 버튼을 누르면 사용할 수 있는 API 항목이 나옵니다.**
-![Application04.png](./images/application04.png)
+<kbd><img src="./images/application04.png" /></kbd>
 
 **관리자가 등록해 놓은 API 목록입니. 선택 후 확인 버튼을 누르면 관리자에게 승인 요청다이 보내집니다.**
-![Application05.png](./images/application05.png)
+<kbd><img src="./images/application05.png" /></kbd>
 
 사용요청을 한 후 관리자가 승인할때까지 "대기" 상태로 나타납니다. 승인 후 "완료" 상태로 나타나며 이때부터 API URL이 보여지고 사용이 가능합니다. 
 
@@ -66,24 +64,25 @@ Developers 포탈 Home 화면을 관리자가 직접 설정할 수 있습니다.
 - Developers 포탈 Home 화면에 나타나는 슬라이드 이미지를 수정할 수 있습니다. 최대 5개 까지 가능하며 슬라이드 순서를 정할 수 있습니다.
 - 슬라이드 시간을 설정할 수 있습니다. (1초~30초 사이로 설정 가능)
 - Footer 설정: Footer 문구를 설정할 수 있습니다. 약관, 도움말 등의 링크 버튼을 설정할 수 있습니다.
-![Home01.png](./images/home01.png)
+  
+<kbd><img src="./images/home01.png" /></kbd>
   
 
 ### Menu 관리하기
 Home 화면의 Menu를 관리자가 직접 관리할 수 있습니다.
-![menu01.png](./images/menu01.png)
+<kbd><img src="./images/menu01.png" /></kbd>
 
-메뉴 구조를 설정하고, 메뉴별 Contents를 작성할 수 있습니다. 
-![menu02.png](./images/menu02.png)
+메뉴 구조를 설정하고, 메뉴별 Contents를 작성할 수 있습니다.
+<kbd><img src="./images/menu02.png" /></kbd>
 
 위 화면에 편집 버튼을 누르면 아래와 같이 컨텐 작성 가능합니다.
-![menu03.png](./images/menu03.png)
+<kbd><img src="./images/menu03.png" /></kbd>
 
 
 ### Product 관리하기
 
 Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
-![Product01.png](./images/product01.png)
+<kbd><img src="./images/product01.png" /></kbd>
 
 1. Product 기본 정보 화면
 
@@ -93,7 +92,7 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 > 
 >상세설명 URL: Developers 메인 화면의 상품 카드 UI의 "제품 소개"를 클릭 시 이동할 화면 URL 입니다.
 
-![Product02.png](./images/product02.png)
+<kbd><img src="./images/product02.png" /></kbd>
 
 2. 담당자 지정 화면
 
@@ -102,7 +101,7 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 > 
 > "권한 관리" 버튼을 클릭하면 APIM Tenant Manager 화면으로 넘어가며, **devportal_admin** 또는 **devportal-api-admin** 권한이 부여된 사용자를 "Product" 담당자로 지정할 수 있습니다.
 
-![Product03.png](./images/product03.png)
+<kbd><img src="./images/product03.png" /></kbd>
 
 3. API 화면
 
@@ -112,7 +111,7 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 >
 > ![Product06.png](./images/product06.png) : APIM Console 화면으로 이동합니다. APIM Console 화면에서 해당 API를 확인할 수 있습니다.
 
-![Product04.png](./images/product04.png)
+<kbd><img src="./images/product04.png" /></kbd>
 
 3-1. API 정책 설정
 
@@ -162,6 +161,6 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 Developers 사용자가 API 사용을 요청하면 관리자는 승인/반려가 가능합니다. 승인/반려 시 메시지 입력을 하여 사용자에게 승인/반려 메시지륿 보낼 수 있습니다.
 
 어떤 Product의 어떤 API를 사용 요청했는지 볼 수 있습니다.
-![api01.png](./images/api01.png)
+<kbd><img src="./images/api01.png" /></kbd>
 
 
