@@ -17,10 +17,10 @@
 |---|---|
 |사용자 권한|
 | apim-admin | APIM 관리자 |
-| apim-member | APIM 일반 사용자 권한 <p> 자신이 속한 프로젝트 내에서 Api 생성 배포만 가능한 일반 사용자 권한|
+| apim-member | APIM 일반 사용자 권한 <br> 자신이 속한 프로젝트 내에서 Api 생성 배포만 가능한 일반 사용자 권한|
 | devportal-admin | DEV. PORTAL 관리자 |
-| devportal-api-admin | DEV. PORTAL API 관리자 <p> DEV. PORTAL 에 게시된 특정 API의 관리 API 설명 작성, 티켓, 질문, 버그 등 담당하는 권한|
-| devportal-member | DEV. PORTAL 일반 사용자 권한 <p> DEV. PORTAL my app 생성 및 맴버 초대 가능|
+| devportal-api-admin | DEV. PORTAL API 관리자 <br> DEV. PORTAL 에 게시된 특정 API의 관리 API 설명 작성, 티켓, 질문, 버그 등 담당하는 권한|
+| devportal-member | DEV. PORTAL 일반 사용자 권한 <br> DEV. PORTAL my app 생성 및 맴버 초대 가능|
 |프로젝트 권한|
 |apim-pjt-admin	| APIM 프로젝트 관리자|
 |apim-pjt-member | APIM 프로젝트 멤버|

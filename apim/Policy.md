@@ -46,8 +46,8 @@ Api에 Key인증을 추가합니다. Api 호출 시 Header에 API 키를 추가�
 ![KeyAuth](./img/policy/KeyAuth.png)
 3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
-- API 호출 시 현재 프로젝트의 API KEY 로 인증 합니다. <p>
-만약 가능한 API KEY가 없는 경우, API를 정상 호출할 수 없음에 유의 바랍니다.<p>
+- API 호출 시 현재 프로젝트의 API KEY 로 인증 합니다. <br>
+만약 가능한 API KEY가 없는 경우, API를 정상 호출할 수 없음에 유의 바랍니다.<br>
 API KEY Header Name은 x-apim-key 입니다.
 
 ### Rate Limit
@@ -81,8 +81,8 @@ OIDC Provider와 연동하여 Api 인증합니다.
     | Client ID | OIDC 클라이언트 ID |
     | Client Secret | OIDC 클라이언트 Secret |
     | Realm | OIDC 클라이언트 Realm |
-    | Discovery | OIDC Provider의 Discovery Endpoint를 입력합니다 <p> ex) http://oidcprovider/openid-connect/.well-known/openid-configuration|
-    | Introspection Endpoint | Token introspection endpoint를 입력합니다 <p> ex) http://oidcprovider/openid-connect/token/introspect|
+    | Discovery | OIDC Provider의 Discovery Endpoint를 입력합니다 <br> ex) http://oidcprovider/openid-connect/.well-known/openid-configuration|
+    | Introspection Endpoint | Token introspection endpoint를 입력합니다 <br> ex) http://oidcprovider/openid-connect/token/introspect|
     | Bearer Only | OIDC 리다이렉트 없이 토큰만 검사합니다.|
 3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
@@ -129,11 +129,11 @@ Request Transformer는 API 호출 시 Request Header, Body에 특정 데이터�
     - 작성 방식
         | 필드1  |필드2|필드3| 설명  |
         |---|---|---|---|
-        | config | remove |headers<p>querystring<p>body|Request에 해당 header, queryString, body가 있으면 삭제합니다. 없으면 무시|
-        |        | rename |headers<p>querystring<p>body|Key : Value 형태로 입력합니다. <p>Request에 해당 header, queryString, body가 있으면 이름을 변경합니다. 없으면 무시|
-        |        | replace |headers<p>querystring<p>body<p>uri|Request에 해당 header, queryString, body가 있으면 데이터를 대체합니다. 없으면 무시<p>**uri**<p>해당 값으로 Api의 Path를 변경합니다.|
-        |        | add |headers<p>querystring<p>body|Key : Value 형태로 입력합니다. <p>Request에 해당 header, queryString, body가 없으면 새로운 데이터를 추가합니다.|
-        |        | append |headers<p>querystring<p>body|Key : Value 형태로 입력합니다. <p>Request에 해당 header, queryString, body에 새로운 데이터를 추가합니다. 중복 가능|
+        | config | remove |headers<br>querystring<br>body|Request에 해당 header, queryString, body가 있으면 삭제합니다. 없으면 무시|
+        |        | rename |headers<br>querystring<br>body|Key : Value 형태로 입력합니다. <br>Request에 해당 header, queryString, body가 있으면 이름을 변경합니다. 없으면 무시|
+        |        | replace |headers<br>querystring<br>body<br>uri|Request에 해당 header, queryString, body가 있으면 데이터를 대체합니다. 없으면 무시<br>**uri**<br>해당 값으로 Api의 Path를 변경합니다.|
+        |        | add |headers<br>querystring<br>body|Key : Value 형태로 입력합니다. <br>Request에 해당 header, queryString, body가 없으면 새로운 데이터를 추가합니다.|
+        |        | append |headers<br>querystring<br>body|Key : Value 형태로 입력합니다. <br>Request에 해당 header, queryString, body에 새로운 데이터를 추가합니다. 중복 가능|
     - 예 config.add.headers=h1:v1,h2:v2, config.append.headers=h1:v1,h1:v2
     3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
@@ -148,11 +148,11 @@ Response Transformer는 API 호출 시 Response Header, Body에 특정 데이터
     - 작성 방식
         | 필드1  |필드2|필드3| 설명  |
         |---|---|---|---|
-        | config | remove |headers<p>json|Response에 해당 header, JSON body가 있으면 삭제합니다. 없으면 무시|
-        |        | rename |headers|**original_header_name : new_header_name**  형태로 입력합니다. <p>Response에 해당 header가 있으면 헤더 명을 변경합니다. 없으면 무시|
-        |        | replace |headers<p>json<p>json_types|**headers, json** <p> header/body명 : 값 형태로 입력합니다.<p> Response에 해당 header, body가 있으면 데이터를 대체합니다. 없으면 무시<p> **json_types**<p> body 명:type 형태로 입력합니다. <p>Response에서 대체할 body의 type를 입력합니다. (number, string)|
-        |        | add |headers<p>json<p>json_types|**headers, json** <p> header/body명 : 값 형태로 입력합니다.<p> Response에 해당 header, body가 있으면 데이터를 추가합니다. 없으면 무시<p> **json_types**<p> body 명:type 형태로 입력합니다. <p>Response에서 추가할 body의 type를 입력합니다. (number, string)|
-        |        | append |headers<p>json<p>json_types|**headers, json** <p> header/body명 : 값 형태로 입력합니다.<p> Response에 해당 header, body가 있으면 데이터를 추가 합니다. 없으면 무시<p> **json_types**<p> body 명:type 형태로 입력합니다. <p>Response에서 추가할 body의 type를 입력합니다. (number, string)|
+        | config | remove |headers<br>json|Response에 해당 header, JSON body가 있으면 삭제합니다. 없으면 무시|
+        |        | rename |headers|**original_header_name : new_header_name**  형태로 입력합니다. <br>Response에 해당 header가 있으면 헤더 명을 변경합니다. 없으면 무시|
+        |        | replace |headers<br>json<br>json_types|**headers, json** <br> header/body명 : 값 형태로 입력합니다.<br> Response에 해당 header, body가 있으면 데이터를 대체합니다. 없으면 무시<br> **json_types**<br> body 명:type 형태로 입력합니다. <br>Response에서 대체할 body의 type를 입력합니다. (number, string)|
+        |        | add |headers<br>json<br>json_types|**headers, json** <br> header/body명 : 값 형태로 입력합니다.<br> Response에 해당 header, body가 있으면 데이터를 추가합니다. 없으면 무시<br> **json_types**<br> body 명:type 형태로 입력합니다. <br>Response에서 추가할 body의 type를 입력합니다. (number, string)|
+        |        | append |headers<br>json<br>json_types|**headers, json** <br> header/body명 : 값 형태로 입력합니다.<br> Response에 해당 header, body가 있으면 데이터를 추가 합니다. 없으면 무시<br> **json_types**<br> body 명:type 형태로 입력합니다. <br>Response에서 추가할 body의 type를 입력합니다. (number, string)|
     - 예 config.add.json=p1:v1,p2=v2, config.add.json_types=p1:string
     3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
