@@ -135,7 +135,7 @@ Request Transformer는 API 호출 시 Request Header, Body에 특정 데이터�
         |        | add |headers<br>querystring<br>body|Key : Value 형태로 입력합니다. <br>Request에 해당 header, queryString, body가 없으면 새로운 데이터를 추가합니다.|
         |        | append |headers<br>querystring<br>body|Key : Value 형태로 입력합니다. <br>Request에 해당 header, queryString, body에 새로운 데이터를 추가합니다. 중복 가능|
     - 예 config.add.headers=h1:v1,h2:v2, config.append.headers=h1:v1,h1:v2
-    3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
+3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
 ### Response Transformer
 ---
@@ -154,7 +154,7 @@ Response Transformer는 API 호출 시 Response Header, Body에 특정 데이터
         |        | add |headers<br>json<br>json_types|**headers, json** <br> header/body명 : 값 형태로 입력합니다.<br> Response에 해당 header, body가 있으면 데이터를 추가합니다. 없으면 무시<br> **json_types**<br> body 명:type 형태로 입력합니다. <br>Response에서 추가할 body의 type를 입력합니다. (number, string)|
         |        | append |headers<br>json<br>json_types|**headers, json** <br> header/body명 : 값 형태로 입력합니다.<br> Response에 해당 header, body가 있으면 데이터를 추가 합니다. 없으면 무시<br> **json_types**<br> body 명:type 형태로 입력합니다. <br>Response에서 추가할 body의 type를 입력합니다. (number, string)|
     - 예 config.add.json=p1:v1,p2=v2, config.add.json_types=p1:string
-    3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
+3. Api 상세 페이지에서 배포버튼을 클릭하여 Api를 배포하면 정책이 적용됩니다.
 ![Api Policy5](./img/policy/ApiPolicy5.png)
 ### Http Log
 ---
