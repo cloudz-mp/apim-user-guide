@@ -75,7 +75,7 @@ OIDC Provider와 연동하여 Api 인증합니다.
 1. OIDC 설정할 Api의 Api 상세페이지로 이동하여 Policy 수정버튼을 클릭합니다.
 ![Api Policy2](./img/policy/ApiPolicy2.png)
 2. 미적용 탭에서 OIDC의 Plus 버튼을 클릭하여 적용합니다.
-![OIDC](./img/policy/OIDC.png)
+![OIDC](./img/policy/oidc.png)
     | 항목  | 설명  |
     |---|---|
     | Client ID | OIDC 클라이언트 ID |
@@ -92,7 +92,7 @@ Cors는 API 호출 시 Cors 설정을 추가합니다.
 1. Cors를 설정할 Api의 Api 상세페이지로 이동하여 Policy 수정버튼을 클릭합니다.
 ![Api Policy2](./img/policy/ApiPolicy2.png)
 2. 미적용 탭에서 Cors의 Plus 버튼을 클릭하여 적용합니다.
-![Cors](./img/policy/Cors.png)
+![Cors](./img/policy/cors.png)
     | 항목  | 설명  |
     |---|---|
     | methods | CORS 설정의 Access-Control-Allow-Methods Header |
