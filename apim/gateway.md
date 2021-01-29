@@ -93,3 +93,47 @@ API Swagger 적용 예시 화면입니다.
 
 2-4. API TEST 기능
 
+- API 배포 전 충분한 테스트가 가능합니다.
+- Method (GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH) 선택 가능하고, 특정 URL Path를 입력해 테스트할 수 있습니다. Template, Header, Query 입력도 가능합니다.
+- Template: Path가 /{key1} 이고, Template이 { "key1" : "value1" } 이면 최종 Path는 /value1 로 자동 변환 됩니다.
+
+2-5 배포 하기
+
+- 충분한 테스트를 거친 후 API를 배포하여 외부로 노출시킬 수 있습니다.
+- <배포하기> 버튼을 클릭하면 배포 버전에 대한 설명을 적어야 합니다. (필수입력)
+- **배포는 여러번** 가능합니다. 배포할때마다 현재 시간을 버전명으로 배포가 됩니다. **단, 배포할때마다 최신버전만 외부로 노출됩니다.**(하나의 버전만 노출이 가능합니다.)
+
+## API 배포 관리
+
+API 배포 현황 화면 - 프로젝트에 속한 배포된 API들을 보여줍니다.
+
+<kbd><img src="./images/deploy01.png" /></kbd>
+
+API 배포 상세 화면
+
+- API 상세화면과 비슷합니다. 하지만 이 화면에서는 Frontend, Backend, Policy, Swagger 문서를 수정할 수 없습니다.
+- 과거에 배포한 버전으로 롤백이 가능합니다. 기존 버전 목록에서 버전을 선택 후 <선택 버전 배포>를 클릭하면 해당 버전으로 바뀝니다.
+
+<kbd><img src="./images/deploy02.png" /></kbd>
+
+## API Document
+
+API Document 목록을 보여줍니다. API 생성 당시 Swagger 문서를 입력했다면 목록에 나옵니다.
+
+<kbd><img src="./images/doc01.png" /></kbd>
+
+API Document 상세 화면에서는 아래 사진과 같이 Swagger UI를 보여줍니다.
+
+<kbd><img src="./images/doc02.png" /></kbd>
+
+
+## Monitoring
+
+Monitoring 메뉴 클릭 시 Grafana 화면으로 이동합니다. 
+
+Grafana에는 Kong 리소스를 확인할 수 있는 Dashboard가 존재합니다. (Dashboards --> General --> Kong)
+
+<kbd><img src="./images/monitoring01.png" /></kbd>
+
+
+
