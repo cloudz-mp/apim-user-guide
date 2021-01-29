@@ -79,7 +79,8 @@ Developers 포탈 Home 화면을 관리자가 직접 설정할 수 있습니다.
 - Footer 설정: Footer 문구를 설정할 수 있습니다. 약관, 도움말 등의 링크 버튼을 설정할 수 있습니다.
   
 <kbd><img src="./images/home01.png" /></kbd>
-  
+
+---
 
 ### Menu 관리하기
 Home 화면의 Menu를 관리자가 직접 관리할 수 있습니다.
@@ -91,6 +92,7 @@ Home 화면의 Menu를 관리자가 직접 관리할 수 있습니다.
 위 화면에 편집 버튼을 누르면 아래와 같이 컨텐츠 작성 가능합니다.
 <kbd><img src="./images/menu03.png" /></kbd>
 
+---
 
 ### Product 관리하기
 
@@ -169,6 +171,8 @@ Developers 관리자 -> Product -> 생성 버튼 클릭 -> Product 이름 작성
 > |Replace|Json_types| [json key]:[반환하려는 타입] <br> JSON 속성을 바꿀 때 반환되는 JSON 값의 유형을 지정합니다.| EX: new-json-key:string or new-json-key:number
 > |Remove|Headers| [header name] <br> 해당 header를 제거합니다.| EX: header-name
 > |Remove|Json| [json key] <br> 해당 파라미터를 제거합니다. | EX: json-key
+
+---
 
 ### API 사용 요청 승인/반려
 Developers 사용자가 API 사용을 요청하면 관리자는 승인/반려가 가능합니다. 승인/반려 시 메시지 입력을 하여 사용자에게 승인/반려 메시지륿 보낼 수 있습니다.
