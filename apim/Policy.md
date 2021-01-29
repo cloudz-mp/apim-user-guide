@@ -38,5 +38,5 @@
 ## Api 기본정책 설정
 신규 API가 생성될 때, 기본으로 적용될 공통 API 정책을 설정합니다. 
 1. APIM 관리 -> APIM 기본 정책 메뉴로 이동합니다.
-![Api Policy5](./img/policy/ApiPolicy5.png)
+![PolicyInit](./img/policy/PolicyInit.png)
 2. Plus/Minus 버튼으로 적용/미적용, 정책 클릭 시 세부 설정이 가능합니다. 
