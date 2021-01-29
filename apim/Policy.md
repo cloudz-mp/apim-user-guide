@@ -11,6 +11,7 @@
     - [Response Transformer](#Response-Transformer)
     - [Http Log](#Http-Log)
 - [Api 정책 설정](#Api-정책-설정)
+- [Api 기본정책 설정](#Api-기본정책-설정)
 ---
 ## Policy
 ### Key Auth
