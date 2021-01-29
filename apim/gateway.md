@@ -2,12 +2,10 @@
 
 - [Gateway 관리](#gateway-관리)
 - [API 관리](#api-관리)
-    - [My Application 생성하기](#my-application-생성하기)
-- [Developers Admin 가이드](#developers-admin-가이드)
-    - [Home 화면 관리하기](#home-화면-관리하기)
-    - [Menu 관리하기](#menu-관리하기)
-    - [Product 관리하기](#product-관리하기)
-    - [API 사용 요청 승인/반려](#api-사용-요청-승인/반려)
+- [API 배포 관리](#api-배포-관리)
+- [API Document](#api-document)
+- [Monitoring](#monitoring)
+
 
 ---
 ## Gateway 관리
