@@ -52,9 +52,15 @@ Gateway 상세 화면
 - API 타입: 통신 타입을 선택할 수 있습니다. (HTTP or Socket)
 - Gateway: API를 생성하려는 Gateway를 선택할 수 있습니다.
 - Gateway URL: Gateway에 속한 Gateway URL을 선택할 수 있습니다. API 호출 시 사용됩니다.
-- Base Path: 해당 API 호출 시 사용되는 Path입니다. https://<GatewayURL>/<BasePath>
-- Backend URL: API 호출 시 맵핑되는 Upstream URL 입니다. https://<GatewayURL>/<BasePath> --> https://<BackendURL> 
-- Developers Portal 게시: 체크 시 Developers Portal에 해당 API가 노출됩니다. [여기](../developers/README.md) 를 클릭하면 Developers Portal 가이드로 이동합니다.
+- Base Path: 해당 API 호출 시 사용되는 Path입니다.
+```
+https://<GatewayURL>/<BasePath>
+```
+- Backend URL: API 호출 시 맵핑되는 Upstream URL 입니다.
+```
+https://<GatewayURL>/<BasePath> --> https://<BackendURL>
+```
+- Developers Portal 게시: 체크 시 Developers Portal에 해당 API가 노출됩니다. [여기](./Developers_Portal.md) 를 클릭하면 Developers Portal 가이드로 이동합니다.
 
 <kbd><img style="width:100%" src="./img/Gateway/api01.png" /></kbd>
 
