@@ -6,13 +6,14 @@
 - [API Document](#api-document)
 - [Monitoring](#monitoring)
 
-
 ---
 ## Gateway 관리
 
 1. Gateway 생성하기(Kong)
 > Gateway 생성 전 Project, Namespace 생성이 필요합니다. <br> 
-> - Project 생성 : APIM 관리 - 사용자 관리(Tenant Manaer Console) 에서 프로젝트 생성이 가능합니다. [여기](../tenant-manager/Tenant-manager.md#프로젝트-관리) 를 클릭하여 Tenant Manager 가이드로 이동합니다. <br>
+> - Project 생성 : APIM 관리 - 사용자 관리(Tenant Manaer Console) 에서 프로젝트 생성이 가능합니다.
+>   - 1개 Project 당 1개의 Gateway를 생성할 수 있습니다.
+>   - 여러 개의 Project를 통해 여러 개의 Gateway를 통합 관리할 수 있습니다.
 > - Kong이 설치될 Namespace 생성: ZCP console - Administration - Namespaces 메뉴에서 Kubernetes Namespace 생성이 가능합니다.
 
 - Gateway 타임: kong (AWS 추후 제공)
@@ -23,7 +24,7 @@
 - Gateway URL: Gateway로 들어가는 URL 입니다. API생성 시 사용됩니다.
 - tls.crt, tls.key: 입력 시 https 로 호출이 가능합니다. 미 입력 시 http로 호출 가능합니다.
 
-<kbd><img src="./images/gateway01.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/gateway01.png" /></kbd>
 
 
 2. Gateway 생성 후 화면
@@ -31,14 +32,14 @@
 
 Gateway 목록 화면 (육각형 모향은 배포된 Kong Pod의 replicas 수를 뜻합니다.) 
 
-<kbd><img src="./images/gateway02.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/gateway02.png" /></kbd>
 
 Gateway 상세 화면
 - Kong Replcas 수를 설정 할 수 있습니다.
 - 설명, 태크, replicas, Gateway URL 부분을 수정할 수 있습니다.
 - Gateway를 삭제할 수 있습니다. **주의!! Gateway를 삭제하면 Gateway에 속한 모든 데이터가 삭제됩니다.**
 
-<kbd><img src="./images/gateway03.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/gateway03.png" /></kbd>
 
 ## API 관리
 
@@ -55,11 +56,11 @@ Gateway 상세 화면
 - Backend URL: API 호출 시 맵핑되는 Upstream URL 입니다. https://<GatewayURL>/<BasePath> --> https://<BackendURL> 
 - Developers Portal 게시: 체크 시 Developers Portal에 해당 API가 노출됩니다. [여기](../developers/README.md) 를 클릭하면 Developers Portal 가이드로 이동합니다.
 
-<kbd><img src="./images/api01.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/api01.png" /></kbd>
 
 2. API 상세화면
 
-<kbd><img src="./images/api02.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/api02.png" /></kbd>
 
 2-1. Frontend - Backend
 
@@ -77,7 +78,7 @@ Gateway 상세 화면
 - 적용 영역에서 - 버튼을 누르면 미적용 영역으로 넘어갑니다.
 - 각각의 policy 이름을 클릭하면 설정 영역에 config를 설정할 수 있는 화면이 나타납니다. 
 
-<kbd><img src="./images/api03.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/api03.png" /></kbd>
 
 
 2-3. API 문서 (Swagger)
@@ -87,7 +88,7 @@ Gateway 상세 화면
 
 API Swagger 적용 예시 화면입니다.
 
-<kbd><img src="./images/api04.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/api04.png" /></kbd>
 
 2-4. API TEST 기능
 
@@ -105,24 +106,24 @@ API Swagger 적용 예시 화면입니다.
 
 API 배포 현황 화면 - 프로젝트에 속한 배포된 API들을 보여줍니다.
 
-<kbd><img src="./images/deploy01.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/deploy01.png" /></kbd>
 
 API 배포 상세 화면
 
 - API 상세화면과 비슷합니다. 하지만 이 화면에서는 Frontend, Backend, Policy, Swagger 문서를 수정할 수 없습니다.
 - 과거에 배포한 버전으로 롤백이 가능합니다. 기존 버전 목록에서 버전을 선택 후 <선택 버전 배포>를 클릭하면 해당 버전으로 바뀝니다.
 
-<kbd><img src="./images/deploy02.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/deploy02.png" /></kbd>
 
 ## API Document
 
 API Document 목록을 보여줍니다. API 생성 당시 Swagger 문서를 입력했다면 목록에 나옵니다.
 
-<kbd><img src="./images/doc01.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/doc01.png" /></kbd>
 
 API Document 상세 화면에서는 아래 사진과 같이 Swagger UI를 보여줍니다.
 
-<kbd><img src="./images/doc02.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/doc02.png" /></kbd>
 
 
 ## Monitoring
@@ -131,7 +132,7 @@ Monitoring 메뉴 클릭 시 Grafana 화면으로 이동합니다.
 
 Grafana에는 Kong 리소스를 확인할 수 있는 Dashboard가 존재합니다. (Dashboards --> General --> Kong)
 
-<kbd><img src="./images/monitoring01.png" /></kbd>
+<kbd><img style="width:100%" src="./img/gateway/monitoring01.png" /></kbd>
 
 
 
