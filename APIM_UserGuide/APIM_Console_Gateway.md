@@ -11,7 +11,7 @@
 
 1. Gateway 생성하기(Kong)
 > Gateway 생성 전 Project, Namespace 생성이 필요합니다. <br> 
-> - Project 생성 : APIM 관리 - 사용자 관리(Tenant Manaer Console) 에서 프로젝트 생성이 가능합니다. [여기](../tenant-manager/TenantManager.md#프로젝트-관리) 를 클릭하여 Tenant Manager 가이드로 이동합니다. <br>
+> - Project 생성 : APIM 관리 - 사용자 관리(Tenant Manaer Console) 에서 프로젝트 생성이 가능합니다. [여기](./TenantManager_Console.md#프로젝트-관리) 를 클릭하여 Tenant Manager 가이드로 이동합니다. <br>
 >   - 1개 Project 당 1개의 Gateway를 생성할 수 있습니다.
 >   - 여러 개의 Project를 통해 여러 개의 Gateway를 통합 관리할 수 있습니다.
 > - Kong이 설치될 Namespace 생성: ZCP console - Administration - Namespaces 메뉴에서 Kubernetes Namespace 생성이 가능합니다.
