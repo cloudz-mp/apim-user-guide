@@ -13,17 +13,28 @@
 
 ## 권한 (Role)
 
+### 시스템 권한
 | 권한  | 설명  |
 |---|---|
-|사용자 권한|
-| apim-admin | APIM 관리자 |
-| apim-member | APIM 일반 사용자 권한 <br> 자신이 속한 프로젝트 내에서 Api 생성 배포만 가능한 일반 사용자 권한|
-| devportal-admin | DEV. PORTAL 관리자 |
-| devportal-api-admin | DEV. PORTAL API 관리자 <br> DEV. PORTAL 에 게시된 특정 API의 관리 API 설명 작성, 티켓, 질문, 버그 등 담당하는 권한|
-| devportal-member | DEV. PORTAL 일반 사용자 권한 <br> DEV. PORTAL my app 생성 및 맴버 초대 가능|
-|프로젝트 권한|
-|apim-pjt-admin	| APIM 프로젝트 관리자|
-|apim-pjt-member | APIM 프로젝트 멤버|
+| apim-admin | APIM 전체 관리자 |
+| apim-member | APIM 일반 사용자 권한 <br> Cloud Z CP의 사용자를 APIM으로 SSO사용자 가져오기 시 적용할 수 있는 기본 권한 |
+| devportal-admin | Developers Portal 전체 관리자 |
+| devportal-api-admin | Developers Portal Product 및 API 관리자 <br> Developers Portal 에 게시된 특정 Product-API의 관리, 설명 작성, Q&A, 결함 개선 등을 담당하는 권한|
+| devportal-member | Developers Portal 일반 사용자 권한 <br> Developers Portal 에 사용자로 회원 가입 시 부여되는 기본 권한 <br> My Application 생성 및 멤버 초대 가능|
+
+  
+### 프로젝트 권한
+APIM에서 프로젝트는 2가지 type으로 표시 합니다.
+
+ - type: apim - APIM Console의 내부 API 개발용 조직/팀의 개념이고, APIM Console에서 "프로젝트(Project)"로 표시됨
+ - type: developers - Developers Portal의 일반 사용자가 개발하기 위한 "Application 또는 My Application"
+
+| type | 권한  | 설명  |
+|---|---|---|
+|apim   |apim-pjt-admin	| APIM 프로젝트 관리자<br>프로젝트 API 기본 정책, API KEY, 멤버 관리|
+|apim   |apim-pjt-member | APIM 프로젝트 멤버|
+|developers   |devportal-pjt-admin<br>(App. 관리자)	| Developers Portal의 Application 관리자|
+|developers   |devportal-pjt-member | Developers Portal의 Application 멤버|
 ## 사용자 관리
 ### **SSO 사용자 조회 및 사용자 추가**
 ---
