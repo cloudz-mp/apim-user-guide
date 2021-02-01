@@ -58,15 +58,17 @@ https://<GatewayURL>/<BasePath>
 ```
 - Backend URL: API 호출 시 맵핑되는 Upstream URL 입니다.
  - Backend URL 입력 가능 형식은 다음과 같습니다.
-    - http://domain.com/
-    - http://domain.com
-    - https://domain.com
-    - http://sub3.sub2.sub1.domain.com
-    - http://domain.com/path1
-    - http://domain.com/path1/path2/path3
-    - http://domain.com:8081
-    - http://sub.domain.com:8081/path
-- Developers Portal 게시: 체크 시 Developers Portal에 해당 API가 노출됩니다. [여기](./Developers_Portal.md) 를 클릭하면 Developers Portal 가이드로 이동합니다.
+ ```
+- http://domain.com/
+- http://domain.com
+- https://domain.com
+- http://sub3.sub2.sub1.domain.com
+- http://domain.com/path1
+- http://domain.com/path1/path2/path3
+- http://domain.com:8081
+- http://sub.domain.com:8081/path
+ ```
+- Developers Portal 게시: 체크 시 Developers Portal에서 해당 API가 조회되고, Developers Portal의 Product로 구성할 수 있게 됩니다. Product로 구성 관련 상세 설명은 [여기](./Developers_Portal.md) 를 참고 바랍니다.
 
 <kbd><img style="width:100%" src="./img/Gateway/api01.png" /></kbd>
 
@@ -86,7 +88,7 @@ https://<GatewayURL>/<BasePath>
 > 
 >Backend: Frontend 이랑 맵핑된 Upstream URL 입니다. 
 
-**수정** 버튼 클릭 시 API 수정 화면으로 이동합니다.
+**수정** 버튼 클릭 시 API Frontend/Backend 수정 화면으로 이동합니다.
 
 2-2. API Policy 수정하기
 
