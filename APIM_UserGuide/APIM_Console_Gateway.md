@@ -90,9 +90,10 @@ API 기본 정보가 위와 같은 경우 API URL은 다음과 같습니다.
 ```
 
 > 예를 들어,  
-> https://your.domain.com/myservice`/v1/apis/` 를 호출하면  
+> https://your.domain.com/myservice/v1/apis/ 를 호출하면
+>
 > 최종적으로  
-> http://backend.com/backend`/v1/apis/` 경로로 Proxy 됩니다.
+> http://backend.com/backend/v1/apis/ 경로로 Proxy 됩니다.
 
 - Developers Portal 게시: 체크 시 Developers Portal에서 해당 API가 조회되고, Developers Portal의 Product로 구성할 수 있게 됩니다. Product로 구성 관련 상세 설명은 [개발자포탈 가이드](./Developers_Portal.md)를 참고 바랍니다.
 
