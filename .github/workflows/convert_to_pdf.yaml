@@ -30,8 +30,8 @@ jobs:
 
     - name: Commit and Push converted PDF files
       run: |
-        git config --local user.name "GitHub Action"
-        git config --local user.email "action@github.com"
+        git config --local user.name "pmmms1226@gmail.com"
+        git config --local user.email "pmmms1226@gmail.com"
         git add *.pdf
         git commit -m "Convert Markdown to PDF"
         git push https://${{ secrets.TOKEN }}@github.com/cloudz-mp/apim-user-guide.git HEAD:master
