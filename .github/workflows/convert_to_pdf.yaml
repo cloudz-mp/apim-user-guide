@@ -19,7 +19,7 @@ jobs:
     - name: Install Pandoc and LaTeX
       run: |
         sudo apt-get update
-        sudo apt-get install -y pandoc texlive-xetex texlive-luatex texlive-lang-cjk
+        sudo apt-get install -y pandoc texlive-xetex texlive-luatex texlive-lang-cjk fonts-noto-cjk
 
     - name: Convert Markdown to PDF
       run: |
