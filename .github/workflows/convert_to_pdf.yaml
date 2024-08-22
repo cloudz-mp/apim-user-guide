@@ -3,10 +3,10 @@ name: Convert Markdown to PDF
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   convert:
