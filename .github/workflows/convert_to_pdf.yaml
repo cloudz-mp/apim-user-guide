@@ -19,13 +19,13 @@ jobs:
     - name: Install Pandoc and LaTeX
       run: |
         sudo apt-get update
-        sudo apt-get install -y pandoc texlive
+        sudo apt-get install -y pandoc texlive-xetex texlive-luatex texlive-lang-cjk
 
     - name: Convert Markdown to PDF
       run: |
         for file in APIM_UserGuide/*.md; do
           [ -f "$file" ] || continue
-          pandoc "$file" -o "${file%.md}.pdf"
+          pandoc "$file" -o "${file%.md}.pdf" --pdf-engine=xelatex -V mainfont="Noto Sans CJK KR"
         done
 
     - name: Commit and Push converted PDF files
