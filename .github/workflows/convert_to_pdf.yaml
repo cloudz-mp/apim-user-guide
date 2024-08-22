@@ -23,7 +23,7 @@ jobs:
 
     - name: Convert Markdown to PDF
       run: |
-        for file in *.md; do
+        for file in APIM_UserGuide/*.md; do
           [ -f "$file" ] || continue
           pandoc "$file" -o "${file%.md}.pdf"
         done
@@ -36,4 +36,4 @@ jobs:
         git commit -m "Convert Markdown to PDF"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
