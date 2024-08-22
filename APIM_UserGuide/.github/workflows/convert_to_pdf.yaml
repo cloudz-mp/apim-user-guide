@@ -1,0 +1,39 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Pandoc and LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc texlive
+
+    - name: Convert Markdown to PDF
+      run: |
+        for file in *.md; do
+          [ -f "$file" ] || continue
+          pandoc "$file" -o "${file%.md}.pdf"
+        done
+
+    - name: Commit and Push converted PDF files
+      run: |
+        git config --local user.name "GitHub Action"
+        git config --local user.email "action@github.com"
+        git add *.pdf
+        git commit -m "Convert Markdown to PDF"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
