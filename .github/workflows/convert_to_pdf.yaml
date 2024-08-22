@@ -34,6 +34,6 @@ jobs:
         git config --local user.email "pmmms1226@gmail.com"
         git add *.pdf
         git commit -m "Convert Markdown to PDF"
-        git push https://${{ secrets.TOKEN }}@github.com/cloudz-mp/apim-user-guide.git HEAD:master
+        git push https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/cloudz-mp/apim-user-guide.git HEAD:main
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
